@@ -1,0 +1,18 @@
+.header {
+  height: 95%;
+  // background-color: $color-background;
+  
+  
+ &__picture {
+  position: absolute;
+  height: 25%;
+  top: 15%;
+  left: 45%;
+  box-shadow: 0 .5rem 3rem rgba($color-font, .8);
+  border-radius: 50%;
+  border: 5px solid $color-pink;
+  animation: slideLeft 1s ease;
+  }
+  
+ }
+ 
