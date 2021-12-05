@@ -11,6 +11,7 @@
 
   &:hover {
     background-color: $color-blue;
+    cursor: pointer;
   }
 
  }
@@ -27,6 +28,7 @@
   box-shadow: 0 .5rem 3rem rgba($color-font, .8);
   &:hover {
     background-color: $color-green;
+    cursor: pointer;
   }
  }
   
@@ -44,22 +46,24 @@
   
     &:hover {
       background-color:  $color-blue;
+      cursor: pointer;
     }
   }
   
   .square {
     position: absolute;
     background-color: $color-green;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(20% 30%, 60% 0, 65% 70%, 55% 80%);
     height: 40%;
     width: 30%;
     bottom: 10%;
-    right: -15%;
+    right: -10%;
     transform: rotate(50deg);
     box-shadow: 0 .5rem 3rem rgba($color-font, .8);
   
     &:hover {
       background-color: $color-yellow;
+      cursor: pointer;
     }
   }
  
