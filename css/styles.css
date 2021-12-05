@@ -1,3 +1,11 @@
+@keyframes slideLeft {
+  0% {
+    opacity: 0%;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -18,7 +26,8 @@ body {
   transform: rotate(-20deg);
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.8); }
   .trapezoid:hover {
-    background-color: #379df7; }
+    background-color: #379df7;
+    cursor: pointer; }
 
 .circle {
   position: absolute;
@@ -30,7 +39,8 @@ body {
   width: 20vw;
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.8); }
   .circle:hover {
-    background-color: #9df397; }
+    background-color: #9df397;
+    cursor: pointer; }
 
 .triangle {
   position: absolute;
@@ -43,20 +53,22 @@ body {
   transform: rotate(40deg);
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.8); }
   .triangle:hover {
-    background-color: #379df7; }
+    background-color: #379df7;
+    cursor: pointer; }
 
 .square {
   position: absolute;
   background-color: #9df397;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(20% 30%, 60% 0, 65% 70%, 55% 80%);
   height: 40%;
   width: 30%;
   bottom: 10%;
-  right: -15%;
+  right: -10%;
   transform: rotate(50deg);
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.8); }
   .square:hover {
-    background-color: #ede96e; }
+    background-color: #ede96e;
+    cursor: pointer; }
 
 .header {
   height: 95%; }
@@ -68,4 +80,10 @@ body {
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.8);
     border-radius: 50%;
     border: 5px solid #c861bf;
-    animation: slideLeft 1s ease; }
+    animation: slideLeft 2s ease; }
+  .header__picture:hover {
+    border: 5px solid #9df397;
+    cursor: pointer; }
+  .header__picture:active {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.8);
+    transform: translateY(3px); }

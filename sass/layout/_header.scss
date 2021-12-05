@@ -11,7 +11,17 @@
   box-shadow: 0 .5rem 3rem rgba($color-font, .8);
   border-radius: 50%;
   border: 5px solid $color-pink;
-  animation: slideLeft 1s ease;
+  animation: slideLeft 2s ease;
+  }
+
+  &__picture:hover {
+    border: 5px solid $color-green;
+    cursor: pointer;
+  }
+
+  &__picture:active {
+  box-shadow: 0 .5rem 2rem rgba($color-font, .8);
+  transform: translateY(3px);
   }
   
  }
