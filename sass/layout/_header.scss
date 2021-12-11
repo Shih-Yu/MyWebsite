@@ -1,12 +1,13 @@
 .header {
   height: 95%;
+  // filter: drop-shadow(0 1rem 3rem rgba($color-font, 0.5));
   // background-color: $color-background;
   
   
  &__picture {
   position: absolute;
-  height: 25%;
-  top: 15%;
+  height: 20%;
+  top: 5%;
   left: 45%;
   box-shadow: 0 .5rem 3rem rgba($color-font, .8);
   border-radius: 50%;
